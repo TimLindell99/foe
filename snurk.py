@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Program name: snurk.py
-# Version: 1.0
+# Version: 1.1
 # Purpose: Processes FOE guild statistics and creates CSV output
 #          that that be used to generate reports.
 
@@ -53,7 +53,7 @@ def process_player_data(file):
                     print("Found unknown player data in input file.")
                     print("Line that couldn't be parsed: " + entry)
     except IOError:
-         print "Could not open file " + file + " for processing"
+         print("Could not open file " + file + " for processing")
          sys.exit(1)
 
     return(players)
